@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Money Master</title>
+  </head>
+
+  <body>
+    <header>
+      <section class="m-auto mb-6 mt-5">
+        <img  src="imges/Money Master💰.png" alt="">
+      </section>
+    </header>
+    <main class="w-9/12 mb-16 mx-auto grid grid-cols-2">
+      <div>
+        <img
+          class="rounded-lg"
+          src="https://images.unsplash.com/photo-1561414927-6d86591d0c4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80"
+          alt=""
+        />
+      </div>
+      <div class="text-center bg-slate-100 mx-12 py-5">
+        <h1 class="font-semibold text-2xl pb-5">Income & Cost</h1>
+        <p>
+          <label for="" class="font-semibold"
+            >Income:
+            <input
+              id="total-income"
+              class="py-1 bg-neutral-300 pl-3 outline-none"
+              placeholder="Enter your Amount"
+              type="text"
+          /></label>
+        </p>
+        <h1 class="font-semibold text-2xl pb-3 pt-4">Expenses</h1>
+        <p class="pl-1">
+          <label for="" class="font-semibold"
+            >Food :
+            <input
+              id="food-cost"
+              class="py-1 bg-neutral-300 pl-3 outline-none"
+              placeholder="Enter your Food cost"
+              type="text"
+          /></label>
+        </p>
+
+        <p class="py-4 pl-3">
+          <label for="" class="font-semibold"
+            >Rent:
+            <input
+              id="rent-home"
+              class="py-1 bg-neutral-300 pl-3 outline-none"
+              placeholder="Enter your Rent cost"
+              type="text"
+          /></label>
+        </p>
+
+        <p class="pr-3">
+          <label for="" class="font-semibold"
+            >Clothes:
+            <input
+              id="clothes-cost"
+              class="py-1 bg-neutral-300 pl-3 outline-none"
+              placeholder="Enter your clothes cost"
+              type="text"
+          /></label>
+        </p>
+
+        <button
+          id="calculate-button"
+          class="py-2 px-8 my-4 font-bold bg-blue-500 text-white rounded"
+        >
+          Calculate
+        </button>
+
+        <h1 class="font-semibold text-2xl pt-4">
+          Total Expenses : $<span id="total-expenses">0</span>
+        </h1>
+        <h1 class="font-semibold text-2xl pb-5 pt-2">
+          Balance : $<span id="rest-amount">0</span>
+        </h1>
+
+        <p class="pr-3">
+          <label for="" class="font-semibold"
+            >Save:
+            <input
+              id="saving-field"
+              class="py-1 bg-neutral-300 pl-3 w-16 outline-none"
+              value="20"
+              type="text"
+            /><span class="text-1xl font-bold px-2">%</span>
+            <button
+              class="py-2 px-8 my-4 font-bold bg-blue-500 text-white rounded"
+              id="saving-button"
+            >
+              Save
+            </button>
+          </label>
+        </p>
+
+        <h1 class="font-semibold text-2xl pt-2">
+          Saving Amount: $<span id="saving-amount">0</span>
+        </h1>
+        <h1 class="font-semibold text-2xl pt-2">
+          Remaining Balance : $<span id="remining-balance">0</span>
+        </h1>
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
